@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Case study a design system">
+    <meta name="author" content="Ben Davidson">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xdc3nvs.css">
+    <script src="../script.js"></script>
+</head>
+
+<body onload="pageLoad('task3')">
+    <div id="nav">
+        <a href="index.html" class="hover-underline-animation inactive">Home</a>
+        <a href="post1.html" class="hover-underline-animation inactive">Post 1</a>
+        <a href="post2.html" class="hover-underline-animation inactive">Post 2</a>
+        <a href="post3.html" class="hover-underline-animation ">Post 3</a>
+    </div>
+    <div id="popup">
+        <span id="close">&times;</span>
+        <img src="" id="popup-content">
+        <button id="popupLeft">&#10094;</button>
+        <button id="popupRight">&#10095;</button>
+    </div>
+    <div id="chapContainer">
+        <h1 class="headerFont">Post 3 - Verbs</h1>
+        <h2>Aim:</h2>
+        <p>I wanted to play with verbs animating their literal meanings whilst using the word as the text content.</p>
+        <h2>Post Text Content:</h2>
+        <p>Some examples would be:</p>
+        <ul>
+            <li>"Motion" and make the text move somehow</li>
+            <li>"Weight" and animate the change of a font's weight</li>
+            <li>"Shape" and animate the change from basic shapes into the letters</li>
+        </ul>
+
+        <h2>Inspiration:</h2>
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 2,'organism')">&#10094;</button>
+            <button onclick="plusDivs(1, 2,'organism')">&#10095;</button>
+            <div class="slide organism">
+                <img src="animations/boldThinText.gif" class="imgClick">
+                <p class="imgDesc">Animation found- <a
+                    href="https://dribbble.com/tags/text-animation">Dribbble</a>
+            </p>
+            </div>
+            <div class="slide organism">
+                <img src="animations/codeText.gif" class="imgClick">
+                <p class="imgDesc">Animation found- <a
+                    href="https://dribbble.com/tags/text-animation">Dribbble</a>
+            </p>
+            </div>
+            <div class="slide organism">
+                <video autoplay muted controls loop>
+                    <source src="animations/motionDesignText.mp4" type="video/mp4">
+                </video>
+                <p class="imgDesc">Animation found- <a
+                    href="https://dribbble.com/tags/text-animation">Dribbble</a>
+            </p>
+            </div>
+            <div class="slide organism">
+                <video autoplay muted controls loop>
+                    <source src="animations/motionText.mp4" type="video/mp4">
+                </video>
+                <p class="imgDesc">Animation found- <a
+                    href="https://dribbble.com/tags/text-animation">Dribbble</a>
+            </p>
+            </div>
+            <div class="slide organism">
+                <video autoplay muted controls loop>
+                    <source src="animations/webMotionText.mp4" type="video/mp4">
+                </video>
+                <p class="imgDesc">Animation found- <a
+                    href="https://dribbble.com/tags/text-animation">Dribbble</a>
+            </p>
+            </div>
+            <div class="slide organism">
+                <video autoplay muted controls loop>
+                    <source src="animations/transitionText.mp4" type="video/mp4">
+                </video>
+                <p class="imgDesc">Animation found- <a
+                    href="https://dribbble.com/tags/text-animation">Dribbble</a>
+            </p>
+            </div>
+        </div>
+
+        <h2>Sketches:</h2>
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 0,'atom')">&#10094;</button>
+            <button onclick="plusDivs(1, 0,'atom')">&#10095;</button>
+            <div class="slide atom">
+                <img src="images/verb1.jpg" class="imgClick">
+            </div>
+            <div class="slide atom">
+                <img src="images/verb2.jpg" class="imgClick">
+            </div>
+        </div>
+
+        <h2>Digital:</h2>
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 0,'molecule')">&#10094;</button>
+            <button onclick="plusDivs(1, 0,'molecule')">&#10095;</button>
+            <div class="slide molecule">
+                <img src="animations/italic.gif" class="imgClick">
+            </div>
+            <div class="slide molecule">
+                <img src="animations/type.gif" class="imgClick">
+            </div>
+            <div class="slide molecule">
+                <img src="animations/motion.gif" class="imgClick">
+            </div>
+            <div class="slide molecule">
+                <img src="animations/colours.gif" class="imgClick">
+            </div>
+        </div>
+
+        <h2>Chosen Post 3:</h2>
+        <div class="carousel">
+            <div class="slide">
+                <img src="animations/colours.gif" class="imgClick">
+            </div>
+        </div>
+
+        <p class="finalCaption">Caption: "3rd Year Bachelor of Design student Ben Davidson developed this
+            post. He was inspired by animating verbs literal meanings.
+
+            We gave the students a few limitations in this assignment. They could
+            only use text, geometric shapes, and colour to explore their thinking
+            about Design and what would be inspiring as a visual for the
+            @designwaikato audience. Ben used after effects to produces this animation of uncolored text absorbing color blobs!
+            Explore design styles with us! Become a #designstudent on the #BDes"</p>
+    </div>
+    <footer>
+        <p>Created for DSIGN341 by ~ Ben Davidson, 2024</p>
+    </footer>
+</body>
+
+</html>

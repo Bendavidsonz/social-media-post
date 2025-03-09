@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Find out what a design system is">
+    <meta name="author" content="Ben Davidson">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xdc3nvs.css">
+    <script src="../script.js"></script>
+</head>
+
+<body onload="pageLoad('task1')">
+    <div id="nav">
+        <a href="index.html" class="hover-underline-animation inactive">Home</a>
+        <a href="post1.html" class="hover-underline-animation ">Post 1</a>
+        <a href="post2.html" class="hover-underline-animation inactive">Post 2</a>
+        <a href="post3.html" class="hover-underline-animation inactive">Post 3</a>
+    </div>
+    <div id="popup">
+        <span id="close">&times;</span>
+        <img src="" id="popup-content">
+        <button id="popupLeft">&#10094;</button>
+        <button id="popupRight">&#10095;</button>
+    </div>
+    <div id="chapContainer">
+        <h1 class="headerFont">Post 1 - Design Themes</h1>
+        <h2>Aim:</h2>
+        <p>I wanted to play with some design themes I found interesting, mainly mixing typography and playing with the
+            texts shape, with the main design styles being: </p>
+        <ul>
+            <li>Bauhaus</li>
+            <li>Geometric</li>
+            <li>Impossible Shapes</li>
+        </ul>
+        <h2>Post Text Content:</h2>
+        <ul>
+            <li>TYPE</li>
+            <li>Bauhaus related Text (Austellung, 1923, September)</li>
+        </ul>
+
+        <h2>Inspiration:</h2>
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 2,'organism')">&#10094;</button>
+            <button onclick="plusDivs(1, 2,'organism')">&#10095;</button>
+            <div class="slide organism">
+                <img src="images/bauhaus1.jpg" class="imgClick">
+                <p class="imgDesc">Bauhaus - Images found <a
+                        href="https://stock.adobe.com/nz/search?k=bauhaus">Adobe</a>
+                </p>
+            </div>
+            <div class="slide organism">
+                <img src="images/bauhaus2.jpg" class="imgClick">
+                <p class="imgDesc">Bauhaus - Images found <a
+                        href="https://stock.adobe.com/nz/search?k=bauhaus">Adobe</a>
+                </p>
+            </div>
+            <div class="slide organism">
+                <img src="images/bauhaus3.jpg" class="imgClick">
+                <p class="imgDesc">Bauhaus - Images found <a
+                        href="https://stock.adobe.com/nz/search?k=bauhaus">Adobe</a>
+                </p>
+            </div>
+            <div class="slide organism">
+                <img src="images/impossible1.jpg" class="imgClick">
+                <p class="imgDesc">Impossible Shapes - Images found <a
+                        href="https://www.google.com/search?q=impossible+geometry+typography&sca_esv=863e684ff3c747da&sca_upv=1&rlz=1C1VDKB_enNZ998NZ998&udm=2&sxsrf=ACQVn0_1oQh18yrDmn1ScpCPwMRREJwE8A%3A1713700399468&ei=L_4kZtOXHPrn2roP9OCewAU&ved=0ahUKEwiT6768n9OFAxX6s1YBHXSwB1gQ4dUDCBA&uact=5&oq=impossible+geometry+typography&gs_lp=Egxnd3Mtd2l6LXNlcnAiHmltcG9zc2libGUgZ2VvbWV0cnkgdHlwb2dyYXBoeUjyE1CbAliMEnAAeACQAQGYAa8CoAGLEKoBBzAuOS4xLjG4AQPIAQD4AQGYAgKgAvQCwgIFEAAYgATCAgYQABgIGB6YAwCSBwMwLjKgB60L&sclient=gws-wiz-serp#vhid=9N00b1PipUU3FM&vssid=mosaic">Google</a>
+                </p>
+            </div>
+            <div class="slide organism">
+                <img src="images/impossible2.jpg" class="imgClick">
+                <p class="imgDesc">Impossible Shapes - Images found <a
+                        href="https://www.google.com/search?q=impossible+geometry+typography&sca_esv=863e684ff3c747da&sca_upv=1&rlz=1C1VDKB_enNZ998NZ998&udm=2&sxsrf=ACQVn0_1oQh18yrDmn1ScpCPwMRREJwE8A%3A1713700399468&ei=L_4kZtOXHPrn2roP9OCewAU&ved=0ahUKEwiT6768n9OFAxX6s1YBHXSwB1gQ4dUDCBA&uact=5&oq=impossible+geometry+typography&gs_lp=Egxnd3Mtd2l6LXNlcnAiHmltcG9zc2libGUgZ2VvbWV0cnkgdHlwb2dyYXBoeUjyE1CbAliMEnAAeACQAQGYAa8CoAGLEKoBBzAuOS4xLjG4AQPIAQD4AQGYAgKgAvQCwgIFEAAYgATCAgYQABgIGB6YAwCSBwMwLjKgB60L&sclient=gws-wiz-serp#vhid=a5jKQJfJDRM6AM&vssid=mosaic">Google</a>
+                </p>
+            </div>
+            <div class="slide organism">
+                <img src="images/impossible3.jpg" class="imgClick">
+                <p class="imgDesc">Impossible Shapes - Images found <a
+                        href="https://www.google.com/search?sca_esv=863e684ff3c747da&sca_upv=1&hl=en-GB&gl=GB&sxsrf=ACQVn0-MLoF505Gh38Howis3S4p0HLyoww:1713700531547&q=Paradox+Shape+Font+Impossible+Letters+Set+Of+Vector+Letters+Constructed+On+The+Basis&uds=AMwkrPsxeBxBCWBs3WSr3G39hGc_dHsJletJbqyvwPDxhZgzJq8wwniCNerH3mqrbL3L91X_NOpXGFqWzonjIWpZhBqzbTCUqyU4N71V573XkBOVn2EUe5VziG6ppEtbxeJu7cJBMb_h79GZsfyw_s0dQHh32k_WSomZs1hMw8tzidz4c7zwtVV-vnLUIf8lD1YglQJWLUcSw_M8AZWFby3tgpDuOgDeZwahG1CxL9pf8hrw810_ONYgQMde-tCEpQs89cWnT6FMluRUZz-CfdzLbMZL_ZT8TdFyLaxITlVr8QMHXZk0uobGvyv_ixk8ZsEY59_Y0-6x6yeu8OwrwfQ3SfjLIb5ZWw&udm=2&prmd=ivnbmtz&sa=X&ved=2ahUKEwiZp7z7n9OFAxUJh1YBHUwgDtYQtKgLegQIChAB&biw=2560&bih=1279&dpr=1#vhid=qSM5CtClrjLvvM&vssid=mosaic">Google</a></p>
+            </div>
+            <div class="slide organism">
+                <img src="images/geometric1.jpg" class="imgClick">
+                <p class="imgDesc">Geometrics - Images found <a
+                        href="https://nz.pinterest.com/pin/alphabet-vector-art-and-icons--718042734353926948/">Pinterest</a></p>
+            </div>
+            <div class="slide organism">
+                <img src="images/geometric2.webp" class="imgClick">
+                <p class="imgDesc">Geometrics - Images found <a
+                        href="https://lens.google.com/search?ep=subb&hl=en-GB&re=df&p=AbrfA8rik57rgUbIejjx0cAB1P8u2qiDd5fsV678QlPMrf4df6zngxLetQ3GBvMFDye9fHLkfUsa9ho70TpCxKAGj2yGe8iNUvyVh0ya1RE0sLUphu2COHl2dix9UYExZTgiSwpjkdaB8pV479gqpuO8OkqmEXwfZ5GrDiJkA8a1eXkJg7E4riafwu3VqNK5LApfFEuq4UgGz7LpVLDg1RB1mbubaKqRd-2vS35O_69bZ57SfvVBcqjffw8ImUOsHfWPJ_OKa4gut-wjtrCE3pXzkqI%3D#lns=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIkVrY0tKRGhtTnpWa1lUWTRMV0ppTVdFdE5ESXpPUzA0WTJSa0xUbGtOMll6T1dVMk5ERXpaQklmYjNob2FFNVFjV2N3Wm5OWmMwWldkMUYzZG5veE4wWXlOa1Z2U1RoQ1p3PT0iLG51bGwsbnVsbCxbW251bGwsbnVsbCwiMC0wIl0sWyJjM2YxNzQzMi04NTU3LTQ4ZDEtYjkxMC04MmEyYzA3NWM5MzIiXV1d">Google</a></p>
+            </div>
+            <div class="slide organism">
+                <img src="images/geometric3.jpg" class="imgClick">
+                <p class="imgDesc">Geometrics - Images found <a
+                        href="https://lens.google.com/search?ep=subb&hl=en-GB&re=df&stcs=1713700678855&p=AbrfA8oMtfsKjfmTkYWLxlqGWRK_wrJxRAFxtA8UakOq9pnkW5tju_XZ89jmlNMeLWuuuGw8he2Ze1_pXGaQdccFVgQXW-aPl0-yEVcD8kyhDe8EMUccCyVrl2NJEEibJPSCpSP9ALt1IgLQYj9X1p7qNyD2dL_00K1owh3bT3F_8FhcUf5ZFnC614TBEqilg_YikbrYPuEKLFH0bqbC2l5b2f1mv5qcUQxTnrxHElJhCaYEvmVyWaIJDNqhr6s0qAQ3EITcNiT5tX_IrQ6DzVp5Kg8%3D&plm=ChAIGRIMCMj%2Bk7EGENC/%2BJ0DChAIGhIMCMj%2Bk7EGENjIgp4D">Google</a></p>
+            </div>
+        </div>
+
+        <h2>Sketches:</h2>
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 0,'atom')">&#10094;</button>
+            <button onclick="plusDivs(1, 0,'atom')">&#10095;</button>
+            <div class="slide atom">
+                <img src="images/type1.jpg" class="imgClick">
+            </div>
+            <div class="slide atom">
+                <img src="images/type2.jpg" class="imgClick">
+            </div>
+            <div class="slide atom">
+                <img src="images/type3.jpg" class="imgClick">
+            </div>
+            <div class="slide atom">
+                <img src="images/type4.jpg" class="imgClick">
+            </div>
+        </div>
+
+        <h2>Digital:</h2>
+        <div class="carousel">
+            <button onclick="plusDivs(-1, 1,'molecule')">&#10094;</button>
+            <button onclick="plusDivs(1, 1,'molecule')">&#10095;</button>
+            <div class="slide molecule">
+                <img src="images/digitalType1.png" class="imgClick">
+                <p class="imgDesc">Bauhaus x Typography</p>
+            </div>
+            <div class="slide molecule">
+                <img src="images/digitalBauhaus1.png" class="imgClick">
+                <p class="imgDesc">Bauhaus Style Poster</p>
+            </div>
+            <div class="slide molecule">
+                <img src="images/digitalType2.png" class="imgClick">
+                <p class="imgDesc">Impossible Shapes x Typography</p>
+            </div>
+            <div class="slide molecule">
+                <img src="images/impossibleP.png" class="imgClick">
+                <p class="imgDesc">Impossible Shapes - Concepts for "P"</p>
+            </div>
+            <div class="slide molecule">
+                <img src="images/digitalType3.png" class="imgClick">
+                <p class="imgDesc">Geometrics x Typography</p>
+            </div>
+            <div class="slide molecule">
+                <img src="images/digitalType5.png" class="imgClick">
+                <p class="imgDesc">Geometrics x Typography</p>
+            </div>
+            <div class="slide molecule">
+                <img src="images/digitalType4.png" class="imgClick">
+                <p class="imgDesc">3D Text</p>
+            </div>
+        </div>
+
+        <h2>Chosen Post 1:</h2>
+        <div class="carousel">
+            <div class="slide">
+                <img src="images/digitalBauhaus1.png" class="imgClick">
+
+            </div>
+        </div>
+
+        <p class="finalCaption">Caption: "3rd Year Bachelor of Design student Ben Davidson developed this
+            post. He was inspired by the famous Art Style "Bauhaus" which utilises basic shapes and primary colors in a
+            minimalist aproach.
+
+            We gave the students a few limitations in this assignment. They could
+            only use text, geometric shapes, and colour to explore their thinking
+            about Design and what would be inspiring as a visual for the
+            @designwaikato audience. Ben stuck to the Bauhaus style, using basic shapes like quarter circles, squares,
+            triangles, and some basic patterns, along with the "Righteous font" and primary colours
+            Explore design styles with us! Become a #designstudent on the #BDes"</p>
+    </div>
+    <footer>
+        <p>Created for DSIGN341 by ~ Ben Davidson, 2024</p>
+    </footer>
+</body>
+
+</html>
