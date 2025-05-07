@@ -6,7 +6,8 @@
     --lightBlue: #5C7C89;
     --blue: #1F4959;
     --midBlue: #193a47;
-    --darkBlue: #011425;    
+    --darkBlue: #011425;   
+    --referenceValue: 1vw; 
 }
 
 body,
@@ -21,13 +22,17 @@ html {
   scroll-behavior: smooth;
 }
 
+#indexBody{
+  overflow: hidden;
+}
+
 footer{
   height: 200px;
   background-color: var(--darkBlue);
   color: var(--white);
   text-align: center;
     align-content: center;
-    font-size: .8vw;
+    font-size: 0.9rem;
 }
 
 h1 {
@@ -40,7 +45,6 @@ img {
 }
 
 #nav {
-  position: absolute;
   width: 40%;
   padding-inline: 30%;
   padding-block: 20px;
@@ -68,7 +72,7 @@ img {
 
 div[id$="Container"] {
   /*All containers throughout the website*/
-  margin-top: 100px;
+  /*margin-top: 100px;*/
   margin-bottom: 70px
 }
 
@@ -76,71 +80,96 @@ div[id$="Container"] {
   /*Container on home page*/
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 0;
-  height: 100%;
+  height: 80%;
 }
 
 #indexContent {
   /*Centre block on home page*/
-  padding: 3vw;
   text-align: center;
   align-items: center;
   color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 0vw;
-  width: 0vw;
-  transition: height 1.5s, width 1.5s, color 2s 1.5s;
-  font-size: .8vw;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  transition: color 2s 1.5s;
+
+  h1, h2, h3, p, a{
+    font-size: clamp(1rem, calc(var(--referenceValue) * 2.5), 2rem);
+    margin: 0;
+    line-height: 1.2;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    display: block;
+  }
+
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  a {
+    color: inherit;
+    font-weight: bold;
+    width: min-content;
+  }
 }
 
+
+/*Screen width up to 1600px*/
 @media screen and (max-width: 1600px) {
   #nav{
     padding-inline: 10%;
     width: 80%;
   }
   #nav a{
-    font-size: 30px !important;
-    
+    font-size: 16px !important;
   }
   a img{
-    height: 30px !important;
+    height: 12px !important;
+  }
+
+  .hover-underline-animation::after{
+    height: 3px !important;
   }
 }
 
-#indexContent h2 {
+/*#indexContent h2 {
   margin: 0;
-  font-size: 2em;
 }
 
 #indexContent div {
   text-transform: uppercase;
 }
-
-#indexContent a {
-  color: inherit;
-}
-
+*/
+/*
 #indexContent div h1 {
   line-height: 1.2;
   padding-bottom: 10px;
-  font-size: 3em;
+
 }
 
 #indexContent div h2 {
   font-size: 1.5em;
-}
+}*/
 
 a.indexCentre {
   /*Link in centre block on home page*/
-  padding: .8vw;
-  transition: all .5s;
+  padding: clamp(4px, calc(var(--referenceValue)), 10px);
   text-decoration: none;
   align-self: center;
   justify-self: center;
-  border: dashed transparent 8px;
+  border: dashed transparent clamp(2px, calc(var(--referenceValue)), 8px);
+}
+
+a.indexCentre:hover {
+  border: dashed var(--black) clamp(2px, calc(var(--referenceValue)), 8px);
 }
 
 #chapContainer {
@@ -167,9 +196,7 @@ a.indexCentre {
   background-color: white;
 }
 
-a.indexCentre:hover {
-  border: dashed var(--black) 8px;
-}
+
 
 table {
   color: var(--text-light);
@@ -201,9 +228,15 @@ span {
 }
 
 #ring {
-  border: solid var(--black) 3vw;
-  padding: 3.5vw;
+  width: 25vh;
+  height: 25vh;
+  aspect-ratio: 1/1;
+  border: solid var(--black);
+  border-width: clamp(20px, calc(var(--referenceValue) * 3), 60px);
+  padding: clamp(10px, calc(var(--referenceValue)*2), 20px);
   position: relative;
+  transition: width 1.5s, height 1.5s;
+  box-sizing: border-box;
 }
 
 hr {
@@ -234,6 +267,7 @@ hr {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
   overflow: auto;
+  align-content: center;
 }
 
 #popup-content {
@@ -333,6 +367,7 @@ hr {
 
 .carousel {
   position: relative;
+  max-height: 80vh;
 }
 
 
@@ -374,7 +409,7 @@ a {
   width: 100%;
   transform: scaleX(0);
   height: 5px;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   background-color: var(--darkBlue);
   transform-origin: bottom right;
